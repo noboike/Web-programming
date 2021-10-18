@@ -135,7 +135,11 @@ background-size: 100% 1.2em;
 #btntext {
     transition: 300ms ease-in-out;
 }
-n1:hover #btntext {
+#btn1:hover {
+    /* background: black;
+    color: white; */
+}
+#btn1:hover #btntext {
     left: 37.5%;
 }
 #btn1:hover #btnicon {
