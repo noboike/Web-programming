@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>tic tac toe</title>
+</head>
+
+<body>
+    <div id="table" class="center">
+        <div id="box1" class="box"></div>
+        <div id="box2" class="box"></div>
+        <div id="box3" class="box"></div>
+        <div id="box4" class="box"></div>
+        <div id="box5" class="box"></div>
+        <div id="box6" class="box"></div>
+        <div id="box7" class="box"></div>
+        <div id="box8" class="box"></div>
+        <div id="box9" class="box"></div>
+
+        <div class="line" id="line1"></div>
+        <div class="line" id="line2"></div>
+        <div class="line2" id="line3"></div>
+        <div class="line2" id="line4"></div>
+
+        <div id="winline1" class="winline1"></div>
+        <div id="winline2" class="winline1"></div>
+        <div id="winline3" class="winline1"></div>
+
+        <div id="winline4" class="winline2"></div>
+        <div id="winline5" class="winline2"></div>
+        <div id="winline6" class="winline2"></div>
+
+        <div class="winline3cont center" id="winline3cont1">
+            <div id="winline7" class="winline3"></div>
+        </div>
+        <div class="winline3cont center" id="winline3cont2">
+            <div id="winline8" class="winline3"></div>
+        </div>
+    </div>
+
+    <button id="btn1" class="center">
+        <p class="center" id="btntext">Play</p>
+        <i class="material-icons center" id="btnicon">play_arrow</i>
+    </button>
+    <p id="resultText" class="center">Draw!</p>
+</body>
+
+<script src="svg.js"></script>
+<script src="app.js"></script>
+
+</html>
