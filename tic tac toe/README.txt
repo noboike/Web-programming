@@ -2,7 +2,7 @@
 
 
 
-view mode: https://codepen.io/yazeed739/full/GRvZYOm
+view mode: https://noboike.com/github/view/sBCj7I67oQq/
 
 
 
