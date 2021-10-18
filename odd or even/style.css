@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: 'Tajawal', sans-serif;
+}
+*:focus {
+    outline: none;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#text1, #text4 {
+    font-size: 30px;
+    pointer-events: none;
+    top: 40%;
+    opacity: 0;
+    transition: 300ms;
+}
+#main {
+    opacity: 0;
+    top: 40%;
+    pointer-events: none;
+    transition: 300ms;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+.close1 {
+    top: 40%;
+    opacity: 0;
+    pointer-events: none; 
+}
+.close {
+    opacity: 0;
+    top: 60%;
+    pointer-events: none;
+}
+.show {
+    opacity: 1;
+    top: 50%;
+    pointer-events: all;
+}
+#text2 {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+#num  {
+    font-size: 70px;
+    width: 100%;
+    text-align: center;
+    color: #53ac6e;
+}
+#barcont {
+    width: 0%;
+    height: 10px;
+    border-radius: 20px;
+    background: #53a6ac;
+}
+.start {
+    animation: start 15s forwards;
+
+}
+.end {
+    animation: none;
+}
+#btns {
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    /* background: red; */
+}
+#btn1 {
+    position: absolute;
+    right: 0%;
+    height: 100%;
+    width: calc(50% - 30px);
+    background: #53ac6e;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+#btn2 {
+    position: absolute;
+    left: 0%;
+    height: 100%;
+    width: calc(50% - 30px);
+    background: #53ac6e;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+#btn1:active, #btn2:active {
+    transform: scale(0.9);
+    transition: 100ms;
+}
+#text3 {
+    font-size: 30px;
+}
+#filter1 {
+    width: 100%;
+    height: 100%;
+}
+#text4 {
+    text-align: center;
+}
+
+#btn3 {
+    margin-bottom: 10px;
+    position: relative;
+    width: 200px;
+    background: #53ac6e;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+}
+#btn3 p {
+    font-size: 20px;
+    color: white;
+    vertical-align: middle;
+    direction: rtl;
+}
+#btn3 i {
+    vertical-align: middle;
+}
+@keyframes start {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
