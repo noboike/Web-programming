@@ -6,7 +6,7 @@ btn1.onclick = () => {
     btn1.style.opacity = "0"
     btn1.style.pointerEvents = "none";
 }
-var turn = 'x';
+var turn = o;
 var xl = 0;
 var ol = 0;
 var lastPlayer = undefined;
@@ -62,16 +62,14 @@ function insert(id) {
 }
 
 function check_win() {
+    for (i in win_spots) {
+        how_win(win_spots[i], i);
+    }
     if(!gameOver && takenSpots == 9)  {
         console.log('draw!');
         resultText.innerHTML = 'Draw! 🤷‍♂️';
         resultText.style.opacity = '1';
         resultText.style.left = '50%';
-    }
-    else {
-        for (i in win_spots) {
-            how_win(win_spots[i], i);
-        }
     }
     
 }
