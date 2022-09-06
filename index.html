@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="jquery-3.6.1.min.js"></script> -->
+    <script src="anime.min.js"></script>
+    <script src="app.js" defer></script>
+    <title>password generator</title>
+  </head>
+  <body hidden>
+    <main class="app">
+      <div class="sec1 fade-anm">
+        <div class="copy-btn">
+          <img src="copy-icon.svg" class="icon1" />
+          <img src="done.svg" class="icon2 done" />
+          <img src="cancel.svg" class="icon2 cancel" />
+        </div>
+        <div class="password-cont">
+          <p class="password-text">2MG85Ui*T$9xSVLe</p>
+        </div>
+      </div>
+      <div class="sec2 fade-anm">
+        <div class="list" onclick="anime_switch1(0);">
+          <p class="list-text">uppercase</p>
+          <div class="switch">
+            <div class="switch-inner"></div>
+          </div>
+        </div>
+        <div class="list" onclick="anime_switch1(1);">
+          <p class="list-text">lowercase</p>
+          <div class="switch">
+            <div class="switch-inner"></div>
+          </div>
+        </div>
+        <div class="list" onclick="anime_switch1(2);">
+          <p class="list-text">numbers</p>
+          <div class="switch">
+            <div class="switch-inner"></div>
+          </div>
+        </div>
+        <div class="list" onclick="anime_switch1(3);">
+          <p class="list-text">symbols</p>
+          <div class="switch">
+            <div class="switch-inner"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sec3 fade-anm">
+        <div class="list-text">length</div>
+        <div class="slider-cont">
+          <input type="range" class="slider" min="1" max="16" value="16" />
+          <p class="slider-text">16</p>
+        </div>
+      </div>
+      <div class="btn fade-anm">generate</div>
+      <div class="noti-box"></div>
+    </main>
+  </body>
+</html>
